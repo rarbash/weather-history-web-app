@@ -1,0 +1,51 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div>
+      <div id="header">
+        <h1 id="title">
+          Bangkok Temperature in 7 days
+        </h1>
+      </div>
+      <!-- <br> -->
+      <div id="whitebg">
+        <div id="screen">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div id="add-icon-area">
+        </div>
+      </div>
+      <!-- <br> -->
+      <div id="button-area">
+        <div class="btn-group" role="group">
+          <input type="radio" class="btn-check" name="btncity" id="bkk" autocomplete="off" checked>
+          <label class="btn btn-outline-info" for="bkk">BKK</label>
+        
+          <input type="radio" class="btn-check" name="btncity" id="cnx" autocomplete="off">
+          <label class="btn btn-outline-info" for="cnx">CNX</label>
+        </div>
+
+        <div id="button-area-right" class="btn-group" role="group">
+          <input type="radio" class="btn-check" name="btntime" id="daily" autocomplete="off" checked>
+          <label class="btn btn-outline-info" for="daily">Daily</label>
+        
+          <input type="radio" class="btn-check" name="btntime" id="hour" autocomplete="off">
+          <label class="btn btn-outline-info" for="hour">3 Hours</label>
+        </div>
+
+      </div>
+    </div>
+    
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script> -->
+  </body>
+</html>

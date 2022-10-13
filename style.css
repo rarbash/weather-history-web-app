@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("cloud.jpg");
+  background-size: cover;
+}
+
+#screen {
+  width: 65em;
+  height: 30em;
+}
+
+#button-area {
+  display: flex;
+}
+
+#button-area-right {
+  margin-left: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+  color: #161a1d;
+}
+
+#icon-daily-area {
+  display: grid;
+  grid-template-columns: 2.1em repeat(7, 8.7em);
+  margin-top: 2.5em;
+}
+
+#icon-hour-area {
+  display: grid;
+  grid-template-columns: 2.1em repeat(9, 6.8em);
+  margin-top: 2.5em;
+}
+
+#icon {
+  justify-self: center;
+}
+
+.btn-check:checked,
+.btn-outline-info {
+  color: white;
+}
+
+#whitebg {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2em;
+  padding-bottom: 0;
+}
